@@ -15,8 +15,7 @@ using namespace std;
 // Compute distance between two points
 
 double distanceBetween(Point p, Point q) {
-	double d = pow((pow((p.x)-(q.x),2.0) + pow((p.y)-(q.y),2.0)),(0.5));
-	cout << d << endl;	
+	double d = pow((pow((p.x)-(q.x),2.0) + pow((p.y)-(q.y),2.0)),(0.5));	
 	return d; // @@@ STUB
   // HINTS: The distance formula is something you hopefully remember
   //   from H.S. algebra, but if not, Wikipedia is your friend.
