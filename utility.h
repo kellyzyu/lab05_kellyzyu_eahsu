@@ -1,5 +1,6 @@
 // utility.h
-
+#ifndef UTILITY_H
+#define UTILITY_H
 
 
 // IN THIS FILE, declare (function prototype only) any of your 
@@ -9,3 +10,6 @@
 // then be sure to  #include "utility.h" in the file where you use
 // these functions
 
+bool ApproxEqual(double a, double b, double tolerance=0.0001);
+
+#endif

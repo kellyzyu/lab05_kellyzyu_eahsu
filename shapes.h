@@ -7,8 +7,8 @@
 //  and giving each part of the struct a name.
 // The parts of a struct are called "members" of that struct
 
-struct Point {
-  double x;
+struct Point { // declare a new struct called Point, {} shows whats inside of struct
+  double x;	   // There are two things in Point, x and y which are type double
   double y;
 }; // Now we can declare data items of type "struct Point".
 

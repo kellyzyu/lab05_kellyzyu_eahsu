@@ -37,7 +37,11 @@ double distanceBetween(Point p, Point q) {
 
 
 void initPoint(struct Point *p, double xVal, double yVal) {
-  //return; //@@@ for a void function, the stub is just a bare return that does nothing
+  //Precondition: Give the reference (address) of a Point *p and give xVal and yVal. 
+  //Postcondition: Set the Point's x value to xVal and its y value to yVal.
+  p->x = xVal;
+  p->y = yVal;
+  return; //@@@ for a void function, the stub is just a bare return that does nothing
 }
 
 
@@ -63,6 +67,7 @@ bool pointsApproxEqual(Point p1,
   // Two points are approximately equal if the distance between them
   // is less than our tolerance.  (If we want to test for 
   // exact equality, we can pass in a value of zero.)
+  //
 
   return distanceBetween(p1,p2) < tolerance;
 
@@ -84,7 +89,10 @@ bool boxesApproxEqual(Box b1, Box b2, double tolerance) {
 
   // TODO: FILL THIS IN WITH APPROPRIATE CODE
 
-  return false; // STUB!  TODO: Delete this line and comment and replace with appropriate code
+  return pointsApproxEqual(b1.ul, b2.ul, tolerance) 
+  && ApproxEqual(b1.width, b2.width, tolerance) 
+  && ApproxEqual(b1.height, b2.height, tolerance); 
+  // STUB!  TODO: Delete this line and comment and replace with appropriate code
 }
 
 

@@ -2,8 +2,9 @@
 #include "shapeFuncs.h"
 #include "tddFuncs.h"
 
-
-
+//init = initialize
+//initialize Point!!
+//Test to see if a Point has been initialized properly
 
 int main() {
 
@@ -11,6 +12,7 @@ int main() {
   struct Point p1Expected,p2Expected,p3Expected,p4Expected;
 
   initPoint(&p1,3.0,4.0);   p1Expected.x = 3.0;    p1Expected.y = 4.0; 
+  // 3.0 is xVal, 4.0 is yVal
   assertTrue(pointsApproxEqual(p1,p1Expected),"pointsApproxEqual(p1,p1Expected)");
 
   initPoint(&p2,-1.2,-3.4); p2Expected.x = -1.2;   p2Expected.y = -3.4; 
